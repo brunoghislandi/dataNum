@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Number</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font: 15pt normal Arial;
+        }
+
+        header{
+            color: crimson;
+            text-align: center;
+        }
+
+        section{
+            background-color: darkgray;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px; 
+            margin: auto;
+            box-shadow: 5px 5px 10px gray;
+        }
+
+        footer{
+            color: black;
+            text-align: center;
+            font-style: italic;
+        }
+
+        select#flist{
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analyzer</h1>
+    </header>
+
+    <section>
+        <div>
+            Numbers (between 1 and 100)
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="To add" onclick="Add()">
+            <br> <br>
+            <select name="flist" id="flist" size="6"></select>
+            <br>
+            <input type="button" value="Finish" onclick="Done()">
+        </div>
+        <div id="res"></div>
+    </section>
+
+    <footer>
+        <p>Data Number</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
